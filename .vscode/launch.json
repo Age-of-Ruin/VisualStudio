@@ -5,10 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Launch",
+            "type": "java",
+            "name": "Java Debug",
+            "request": "launch",
+            "mainClass": "${workspaceFolder}/Java/test.java"
+        },
+        {
+            "name": "C (gdb) Debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/test",
+            "program": "${workspaceFolder}/C/test",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -22,7 +28,13 @@
                     "ignoreFailures": true
                 }
             ]
+        },
+        {
+            "name": "Python Debug",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/Python/test.py",
+            "console": "integratedTerminal"
         }
-
     ]
 }
